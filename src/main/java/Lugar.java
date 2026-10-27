@@ -2,11 +2,22 @@ public class Lugar {
     private char fila;
     private int numero;
 
-    public char getFila() {
-        return fila;
+    public Lugar(char fila, int numero) {
+        this.fila = fila;
+        this.numero = numero;
+    }
+    @Override
+    public String toString() {
+        return "Lugar{" +
+                "fila=" + fila +
+                ", numero=" + numero +
+                '}';
     }
 
     //region Getters e Setters
+    public char getFila() {
+        return fila;
+    }
     public void setFila(char fila) {
         this.fila = fila;
     }
